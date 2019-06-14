@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <title>Fredrik Trusohamn CV</title>
         <link rel="stylesheet" type="text/css" href="style.css">
-        <script type="text/JavaScript" src=></script>
+        <script type="text/JavaScript" src=script.js></script>
         <link href="https://fonts.googleapis.com/css?family=Muli:400,900|Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
@@ -94,14 +94,16 @@
             </div>
             <div id=software>
                 <h2>Software skills</h2>
-                    <p><!---Change to grid with logos-->
-                        Arcgis<br>
-                        Microsoft Excel (VBA+Macro)<br>
-                        Microsoft Office <br>
-                        Adobe Photoshop <br>
-                        Adobe Illustrator<br>
-                        Balsamiq
-                    </p>
+                <!---Change to grid with logos-->
+                <div class=soft_grid>
+                    <div class=sg1><img src="img/ArcGIS_logo.png" width="100px"> </div>
+                    <div class=sg2><img src="img/excel_logo.png" width="100px"> </div>
+                    <div class=sg3><img src="img/photoshop_logo.png" width="100px"> </div>
+                    <div class=sg4><img src="img/illustrator_logo.png" width="100px"> </div>
+                    <div class=sg5><img src="img/audition_logo.png" width="100px"> </div>
+                    <div class=sg6><img src="img/balsamiq_logo.png" width="100px"> </div>
+                </div>
+
             </div>
             <div id=interests>
                 <h2>Interests</h2>
@@ -134,8 +136,42 @@
                               <span class="dot" onclick="currentSlide(2)"></span> 
                               <span class="dot" onclick="currentSlide(3)"></span> 
                 </div>
+                <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          let i;
+                          let slides = document.getElementsByClassName("mySlides");
+                          let dots = document.getElementsByClassName("dot");
+                          if (n > slides.length) {slideIndex = 1}    
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";  
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";  
+                          dots[slideIndex-1].className += " active";
+                        }
+                </script>
             <div id=contact>
                 <h2>Contact</h2>
+                <img src="img/headshot.jpg" style="width: 20%">
+                Fredrik Trusohamn
+                email: <a href="mailto:fredrik.trusohamn@gmail.com?Subject=About20%your20%cv" target="_top">Fredrik.Trusohamn@gmail.com</a>
+                Phone: <a href="tel:+46 76 001 96 30">076 001 96 30</a>
+                <a href="https://github.com/Uikikr"><img src="img/GitHub.png" width="50 px"></a>
+                <a href="https://www.linkedin.com/in/fredrik-trusohamn/"><img src="img/linkedin-logo.png" width="50 px"></a>
             </div>
 
         

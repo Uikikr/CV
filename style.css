@@ -83,8 +83,17 @@ li {
     padding-bottom: 15px;
 }
 
+#edu_intern {
+    background-color: #ecccff;
+    -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
+    box-shadow: 2px 2px 2px 2px #cccdce;
+    height: 300px;
+    justify-content: center;
+}
+
 #edu_intern h2{
     text-align: center;
+    padding-top: 50px;
 }
 
 .edu_grid {
@@ -116,13 +125,23 @@ li {
     text-align: center;
 }
 
-/* Add software logos as grid here
+/* Add software logos as row here*/
+#software {
+    text-align: center;
+    height: 300px;
+    background-color: #ecccff;
+    -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
+    box-shadow: 2px 2px 2px 2px #cccdce;
 
+}
+.soft_grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center;
+}
 
-
-*/
-
-* {box-sizing:border-box}
+/** {box-sizing:border-box}*/
 
 .slideshow-container {
   max-width: 1000px;
