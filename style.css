@@ -1,5 +1,6 @@
-header {
-    overflow: auto;
+h2 {
+    font-family: 'Muli';
+    font-size: 43px;
 }
 
 button {
@@ -10,18 +11,54 @@ button {
     border: 1px #7142f4;
     height: 30px;
     width: 95px;
+    float: right;
+}
+
+li {
+    list-style-type: none;
+    font-family: 'Roboto';
+    font-size: 20px;
 }
 
 #meny li {
     display: inline-block;
     padding-right: 15px;
+    font-size: 15px;
+    color: black;
 }
 
 #meny {
-    float: right;
+    float: center;
     z-index: 10;
     padding-right: 20px;
     margin-top: 10px;
+    -webkit-box-shadow: 0 2px 2px #cccdce;
+    box-shadow: 0 2px 2px #cccdce;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #dee9fc;
+}
+
+#meny a:link {
+    color: black;
+    text-decoration: none;
+}
+
+#meny a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#meny a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+#meny a:active {
+    color: green;
+    text-decoration: underline;
 }
 
 #experience {
@@ -33,4 +70,15 @@ button {
     z-index: 100;
     padding-bottom: 184px;
     text-align: center;
+}
+
+#experience li{
+    padding-bottom: 15px;
+}
+
+#lang_prog {
+    margin-top: 100px;
+    z-index: 100;
+    padding-bottom: 184px;
+    text-align: Left;
 }
