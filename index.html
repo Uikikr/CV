@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Fredrik Trusohamn CV</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,900|Roboto:400;700|Righteous&display=swap" rel="stylesheet">
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <title>Fredrik Trusohamn CV</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Muli:400,900|Roboto:400;700|Righteous&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
     <div id=Container>
         <header>
-            <div class=meny_nav>
-                <div id=nav_link>
-                <a href="#experience">Experience</a>
-                <a href="#edu_intern">Education and Internships</a>
-                <a href="#lang_prog">Languages</a>
-                <a href="#software">Software</a>
-                <a href="#interests">Interests</a>
-                <a href="#contact">Contact</a>
-                <a href="javascript:void(0);" class="icon" onclick="menyDrop()">
-                    <i class="fa fa-bars"></i>
-                </a>
+            <div id=navbar>
+                <div class="dropdown">
+                    <button onclick="dropDownF()" class="dropBttn">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div></button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#experience">Experience</a>
+                        <a href="#edu_intern">Education and Internships</a>
+                        <a href="#lang_prog">Languages</a>
+                        <a href="#software">Software</a>
+                        <a href="#interests">Interests</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
-                <!--<button id="About">About me</button>-->
-            </div>
-            <div id="About_Modal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Fill this shit out</p>
+
+
+                <button id="about">About me</button>
+                <div id="About_Modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Fill this shit out</p>
+                    </div>
                 </div>
-                  
             </div>
         </header>
         <div id=main_site>
@@ -36,40 +43,40 @@
                 <h2>Experience</h2>
                 <ul>
                     <li>
-                        Dec. 2018 - Until today<br>  	
-                        Zettle - Costumer Success Advisor 
+                        Dec. 2018 - Until today<br>
+                        Zettle - Costumer Success Advisor
                     </li>
                     <li>
-                            Jun. 2018 – Dec. 2018<br>	
-                            Teleperformance - Quality Assurance Analyst 
+                        Jun. 2018 – Dec. 2018<br>
+                        Teleperformance - Quality Assurance Analyst
                     </li>
                     <li>
-                            Jan. 2018 – Jun. 2018<br>	
-                            Teleperformance Trainer for the support agents
+                        Jan. 2018 – Jun. 2018<br>
+                        Teleperformance Trainer for the support agents
                     </li>
                     <li>
-                            Jan. 2017 – Jan 2018<br>	
-                            Teleperformance Support agent
+                        Jan. 2017 – Jan 2018<br>
+                        Teleperformance Support agent
                     </li>
                     <li>
-                            Nov. 2016 – Jan. 2017<br>	
-                            Transcom - Support agent
+                        Nov. 2016 – Jan. 2017<br>
+                        Transcom - Support agent
                     </li>
                     <li>
-                            April 2015 – Nov. 2015<br>	
-                            Tallink Silja Sales agent
+                        April 2015 – Nov. 2015<br>
+                        Tallink Silja Sales agent
                     </li>
                     <li>
-                            Jun. – Aug. 2014<br>	
-                            Excavation assistant- Buttle socken
+                        Jun. – Aug. 2014<br>
+                        Excavation assistant- Buttle socken
                     </li>
                     <li>
-                            April 2010 – Aug. 2010<br>	
-                            Norrtulls bilrekond
+                        April 2010 – Aug. 2010<br>
+                        Norrtulls bilrekond
                     </li>
                     <li>
-                            2006 – 2014<br>	
-                            Polisförbundet - Miscellaneous office duties
+                        2006 – 2014<br>
+                        Polisförbundet - Miscellaneous office duties
                     </li>
 
                 </ul>
@@ -80,13 +87,13 @@
                 <div class=edu_row>
                     <div class="edu g1">
                         <p>2010 - 2014 <br>
-                        Master's degree - Archeology<br>
-                        Uppsala Universitet campus Gotland<br></p>
+                            Master's degree - Archeology<br>
+                            Uppsala Universitet campus Gotland<br></p>
                     </div>
                     <div class="edu g2">
-                        <p>Jan. 2016 – April 2016	<br>
-                        Uniwersytet Gdanski (Polen) <br>
-                        Analysis of artifacts and lecturing</p> 
+                        <p>Jan. 2016 – April 2016 <br>
+                            Uniwersytet Gdanski (Polen) <br>
+                            Analysis of artifacts and lecturing</p>
                     </div>
                 </div>
             </div>
@@ -95,7 +102,7 @@
                 <p id=lang>
                     <p>Swedish</p>
                     <div class="container_lang">
-                          <div class="skills swe">100%</div>
+                        <div class="skills swe">100%</div>
                     </div>
                     <p>English</p>
                     <div class="container_lang">
@@ -103,23 +110,23 @@
                     </div>
                     <p>Polish</p>
                     <div class="container_lang">
-                            <div class="skills pol">90%</div>
+                        <div class="skills pol">90%</div>
                     </div>
                     <p>HTML</p>
                     <div class="container_lang">
-                            <div class="skills html">90%</div>
+                        <div class="skills html">90%</div>
                     </div>
                     <p>CSS</p>
                     <div class="container_lang">
-                            <div class="skills CSS">90%</div>
+                        <div class="skills CSS">90%</div>
                     </div>
                     <p>JavaScript</p>
                     <div class="container_lang">
-                            <div class="skills JavaS">90%</div>
+                        <div class="skills JavaS">90%</div>
                     </div>
                     <p>Ruby</p>
                     <div class="container_lang">
-                            <div class="skills ruby">90%</div>
+                        <div class="skills ruby">90%</div>
                     </div>
 
                 </p>
@@ -140,58 +147,60 @@
             <div id=interests>
                 <h2>Interests</h2>
                 <div class="slideshow-container">
-                        <div class="mySlides fade">
-                                <div class="numbertext">1 / 3</div>
-                                <img src="img/img1.jpg" style="width:100%">
-                                <div class="text">Climbing</div>
-                              </div>
-                            
-                              <div class="mySlides fade">
-                                <div class="numbertext">2 / 3</div>
-                                <img src="img/img2.jpg" style="width:100%">
-                                <div class="text">Biking</div>
-                              </div>
-                            
-                              <div class="mySlides fade">
-                                <div class="numbertext">3 / 3</div>
-                                <img src="img/img3.jpg" style="width:100%">
-                                <div class="text">Sacrificing child to horse</div>
-                              </div>
-                                                        
-                              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                              <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                            </div>
-                            <br>
-                                                    
-                            <div style="text-align:center">
-                              <span class="dot" onclick="currentSlide(1)"></span> 
-                              <span class="dot" onclick="currentSlide(2)"></span> 
-                              <span class="dot" onclick="currentSlide(3)"></span> 
+                    <div class="mySlides fade">
+                        <div class="numbertext">1 / 3</div>
+                        <img src="img/img1.jpg" style="width:100%">
+                        <div class="text">Climbing</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">2 / 3</div>
+                        <img src="img/img2.jpg" style="width:100%">
+                        <div class="text">Biking</div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <div class="numbertext">3 / 3</div>
+                        <img src="img/img3.jpg" style="width:100%">
+                        <div class="text">Sacrificing child to horse</div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
                 </div>
                 <script>
 
                 </script>
-            <div id=contact>
-                <h2>Contact</h2>
-                <div class=foot_container>
-                    <img src="img/headshot.jpg" style="width: 20%">
-                    <p>Fredrik Trusohamn <br>
-                    Email: <a href="mailto:fredrik.trusohamn@gmail.com?Subject=About20%your20%cv" target="_top">Fredrik.Trusohamn@gmail.com</a><br>
-                    Phone: <a href="tel:+46 76 001 96 30">076 001 96 30</a><br>
-                    <a href="https://github.com/Uikikr"><img src="img/GitHub.png" width="50 px"></a>
-                    <a href="https://www.linkedin.com/in/fredrik-trusohamn/"><img src="img/linkedin-logo.png" width="50 px"></a>
-                    </p>
+                <div id=contact>
+                    <h2>Contact</h2>
+                    <div class=foot_container>
+                        <img src="img/headshot.jpg" style="width: 20%">
+                        <p>Fredrik Trusohamn <br>
+                            Email: <a href="mailto:fredrik.trusohamn@gmail.com?Subject=About20%your20%cv"
+                                target="_top">Fredrik.Trusohamn@gmail.com</a><br>
+                            Phone: <a href="tel:+46 76 001 96 30">076 001 96 30</a><br>
+                            <a href="https://github.com/Uikikr"><img src="img/GitHub.png" width="50 px"></a>
+                            <a href="https://www.linkedin.com/in/fredrik-trusohamn/"><img src="img/linkedin-logo.png"
+                                    width="50 px"></a>
+                        </p>
+                    </div>
                 </div>
+
+
             </div>
 
-        
         </div>
+        <script type="text/JavaScript" src=script.js></script>
 
-    </div>
-    <script type="text/JavaScript" src=script.js></script>
-
-    </body>
-            <!--<ul id=meny>
+</body>
+<!--<ul id=meny>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#edu_intern">Education and Internships</a></li>
                 <li><a href="#lang_prog">Languages</a></li>
@@ -200,4 +209,5 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><button id="About">About me</button></li>
             </ul>-->
+
 </html>
