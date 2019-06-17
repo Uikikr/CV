@@ -9,7 +9,7 @@ p {
     font-size: 20px;
 }
 
-button {
+/*button {
     background-color: #7142f4;
     color: #fff;
     border-radius: 4px;
@@ -17,8 +17,8 @@ button {
     border: 1px #7142f4;
     height: 30px;
     width: 95px;
-    float: right;
-}
+    top: 0;
+}*/
 
 li {
     list-style-type: none;
@@ -27,7 +27,32 @@ li {
 }
 
 /*Meny*/
-#meny li {
+
+.meny_nav {
+  overflow: hidden;
+  position: relative;
+}
+
+.meny_nav #nav_link {
+  display: none;
+}
+
+.meny_nav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/*#meny li {
     display: inline-block;
     padding-right: 15px;
     font-size: 24px;
@@ -71,7 +96,7 @@ li {
 #meny a:active {
     color: green;
     text-decoration: underline;
-}
+}*/
 
 .modal {
   display: none;
@@ -124,6 +149,7 @@ li {
     padding-bottom: 15px;
 }
 
+/*education and internship*/
 #edu_intern {
     background-color: #ded89b;
     -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
@@ -137,27 +163,16 @@ li {
     padding-top: 50px;
 }
 
-.edu_grid {
-    display: grid;
-    grid-template-columns: auto;
-    grid-gap: 10px;
-    align-self: auto;
+.edu_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  align-items: center;
 }
 
-.edu_grid div {
-    text-align: left;
-    font-size: 22px;
-}
-
-.edu_g1 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.edu_g2 {
-    grid-column-start: 4;
-    grid-column-end: 6;
-}
+/*.edu {
+  padding-left: 20px;
+}*/
 
 #lang_prog {
   display: flex;
@@ -203,7 +218,7 @@ li {
 .soft_grid {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; 
+    justify-content: space-evenly; 
     align-items: center;
 }
 
