@@ -9,22 +9,27 @@
     <body>
     <div id=Container>
         <header>
-            <ul id=meny>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#edu_intern">Education and Internships</a></li>
-                <li><a href="#lang_prog">Languages</a></li>
-                <li><a href="#software">Software</a></li>
-                <li><a href="#interests">Interests</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><button id="About">About me</button></li>
-            </ul>
+            <div class=meny_nav>
+                <div id=nav_link>
+                <a href="#experience">Experience</a>
+                <a href="#edu_intern">Education and Internships</a>
+                <a href="#lang_prog">Languages</a>
+                <a href="#software">Software</a>
+                <a href="#interests">Interests</a>
+                <a href="#contact">Contact</a>
+                <a href="javascript:void(0);" class="icon" onclick="menyDrop()">
+                    <i class="fa fa-bars"></i>
+                </a>
+                </div>
+                <!--<button id="About">About me</button>-->
+            </div>
             <div id="About_Modal" class="modal">
-                    <div class="modal-content">
-                      <span class="close">&times;</span>
-                      <p>Fill this shit out</p>
-                    </div>
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Fill this shit out</p>
+                </div>
                   
-                  </div>
+            </div>
         </header>
         <div id=main_site>
             <div id=experience>
@@ -72,16 +77,16 @@
             </div>
             <div id=edu_intern>
                 <h2>Education & Internships</h2>
-                <div class=edu_grid>
-                    <div class=edu_g1>
-                        2010 - 2014 <br>
+                <div class=edu_row>
+                    <div class="edu g1">
+                        <p>2010 - 2014 <br>
                         Master's degree - Archeology<br>
-                        Uppsala Universitet campus Gotland<br>
+                        Uppsala Universitet campus Gotland<br></p>
                     </div>
-                    <div class=edu_g2>
-                        Jan. 2016 – April 2016	<br>
+                    <div class="edu g2">
+                        <p>Jan. 2016 – April 2016	<br>
                         Uniwersytet Gdanski (Polen) <br>
-                        Analysis of artifacts and lecturing
+                        Analysis of artifacts and lecturing</p> 
                     </div>
                 </div>
             </div>
@@ -186,5 +191,13 @@
     <script type="text/JavaScript" src=script.js></script>
 
     </body>
-
+            <!--<ul id=meny>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#edu_intern">Education and Internships</a></li>
+                <li><a href="#lang_prog">Languages</a></li>
+                <li><a href="#software">Software</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="About">About me</button></li>
+            </ul>-->
 </html>
