@@ -47,16 +47,16 @@ li {
 }
 
 .dropBttn {
-  background-color: white;
+  /*background-color: white;*/
+  background: none;
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
 }
 
-.dropBttn:hover,
-.dropBttn:focus {
-  background-color: rgb(196, 199, 201);
+.dropBttn:hover{
+  background-color: #609fca;
 }
 
 .dropdown {
@@ -98,14 +98,16 @@ li {
 }
 
 #about {
-  background-color: #7142f4;
+  background-color: #609fca;
   color: #fff;
   border-radius: 4px;
   margin-right: 25px;
   padding: 0 12px;
-  border: 1px #7142f4;
+  border: 1px #609fca;
   height: 67px;
   width: 71px;
+  cursor: pointer;
+  font-weight: bold;
 }
 
 .modal {
@@ -165,7 +167,7 @@ li {
 
 /*education and internship*/
 #edu_intern {
-  background-color: #ded89b;
+  background-color: #d7d086;
   -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
   box-shadow: 2px 2px 2px 2px #cccdce;
   height: 300px;
@@ -208,36 +210,37 @@ li {
   text-align: right;
   padding-top: 10px;
   padding-bottom: 10px;
-  color: white;
-}
+  color: Black;
+  font-family: 'Roboto';
+  }
 
 .swe {
   width: 100%;
-  background-color: #4caf50;
+  background-color: #609fca;
 }
 .eng {
-  width: 80%;
-  background-color: #2196f3;
+  width: 90%;
+  background-color: #9fca60;
 }
 .pol {
-  width: 65%;
-  background-color: #f44336;
+  width: 20%;
+  background-color: #ca609f;
 }
 .html {
   width: 90%;
-  background-color: #808080;
+  background-color: #609fca;
 }
 .CSS {
   width: 90%;
-  background-color: blue;
+  background-color: #9fca60;
 }
 .JavaS {
-  width: 50%;
-  background-color: #4caf50;
+  width: 45%;
+  background-color: #ca609f;
 }
 .ruby {
   width: 20%;
-  background-color: #2196f3;
+  background-color: #cac060;
 }
 
 /* Add software logos as row here*/
@@ -246,7 +249,7 @@ li {
   text-align: center;
   justify-content: center;
   height: 400px;
-  background-color: #ca8b60;
+  background-color: #d7868e;
   -webkit-box-shadow: 2px 2px 2px 2px #919699;
   box-shadow: 2px 2px 2px 2px #919699;
 }
