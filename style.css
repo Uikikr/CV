@@ -1,6 +1,7 @@
 body {
-  height: auto;
+  height: 100%;
   width: auto;
+  margin: 0;
 }
 h2 {
   font-family: "Muli";
@@ -52,7 +53,7 @@ li {
   font-size: 16px;
   border: none;
   cursor: pointer;
-}
+ }
 
 .dropBttn:hover {
   background-color: #609fca;
@@ -87,66 +88,37 @@ li {
   display: block;
 }
 
-.bar1,
-.bar2,
-.bar3 {
-  width: 35px;
-  height: 5px;
-  background-color: #333;
-  margin: 6px 0;
-}
+/*Starter*/
 
-#about {
-  background-color: #609fca;
-  color: #fff;
-  border-radius: 4px;
-  margin-right: 25px;
-  padding: 0 12px;
-  border: 1px #609fca;
-  height: 67px;
-  width: 71px;
-  cursor: pointer;
-  font-weight: bold;
-}
+.bg_img {
+  background-image: url("background.jpg");
+  height: 910px;
+  opacity: 0.65;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: -1;
+  }
 
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 9999;
+.img_text {
+  position: absolute;
   left: 0;
-  top: 0;
+  top: 50%;
   width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgb(0, 0, 0);
-  background-color: rgba(0, 0, 0, 0.4);
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 15% auto;
-  padding: 20px;
-  border: 1px solid #888;
-  width: 80%;
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
+  text-align: center;
+  color: #000;
+  }
+.img_text span.border {
+  background-color: #ca606a;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
 }
 
 /*Experience*/
 
-/*
 .xp_list h2 {
   font-family: "Muli";
   font-size: 23px;
@@ -206,7 +178,7 @@ li {
   position: absolute;
   top: 22px;
   width: 0;
-  z-index: 1;
+  z-index: 2;
   opacity: 0.99;
   right: 30px;
   border: medium solid #609fca;
@@ -265,8 +237,8 @@ li {
   .right {
     left: 0%;
   }
-}*/
-#experience {
+}
+/*#experience {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,7 +251,7 @@ li {
 
 .xp_list {
   text-align: left;
-}
+}*/
 
 /*education and internship*/
 #edu_intern {
@@ -491,6 +463,62 @@ li {
   text-align: center;
 }
 
+#about_20 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#about {
+  background-color: #609fca;
+  color: #fff;
+  border-radius: 4px;
+  margin-right: 25px;
+  padding: 0 12px;
+  border: 1px #609fca;
+  height: 67px;
+  width: 500px;
+  cursor: pointer;
+  font-weight: bold;
+  }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 .foot_container {
   display: flex;
   flex-direction: row;
@@ -502,3 +530,72 @@ li {
   padding-left: 15px;
   line-height: 150%;
 }
+
+
+.timeline {
+  width:100%;
+  max-width:800px;
+  background:#fff;
+  padding: 100px 50px;
+  position: relative;
+  box-shadow: $container-shadow;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left:calc(33% + 15px); //$gutter/2
+    bottom: 0px;
+    width: $border-width;
+    background: #ddd;
+  }
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+}
+
+.entry {
+  clear: both;
+  text-align: left;
+  position: relative;
+  .title {
+    margin-bottom: .5em;
+    float: left;
+    width: 33%;
+    padding-right: $gutter;
+    text-align: right;
+    position: relative;
+    &:before {
+      content: '';
+      position: absolute;
+      width: $dot-diameter;
+      height: $dot-diameter;
+      border: $border-width solid salmon;
+      background-color:#fff;
+      border-radius:100%;
+      top: 15%;
+      right: -$dot-diameter;
+      z-index: 99;
+    }
+    h3 {
+      margin: 0;
+      font-size: 120%;
+    }
+    p {
+      margin: 0;
+      font-size: 100%;
+    }
+  }
+  .body {
+    margin: 0 0 3em;
+    float: right;
+    width: 66%;
+    padding-left: $gutter;
+    p {
+      line-height: 1.4em;
+      &:first-child {
+        margin-top: 0;
+        font-weight: 400;
+      }
+    }
