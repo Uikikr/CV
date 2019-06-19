@@ -238,20 +238,9 @@ li {
     left: 0%;
   }
 }
-/*#experience {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  z-index: 100;
-  padding-bottom: 184px;
-  text-align: center;
+#experience {
+margin-left: 50px;
 }
-
-.xp_list {
-  text-align: left;
-}*/
 
 /*education and internship*/
 #edu_intern {
@@ -331,7 +320,6 @@ li {
   background-color: #cac060;
 }
 
-/* Add software logos as row here*/
 #software {
   padding-top: 50px;
   text-align: center;
@@ -530,72 +518,3 @@ li {
   padding-left: 15px;
   line-height: 150%;
 }
-
-
-.timeline {
-  width:100%;
-  max-width:800px;
-  background:#fff;
-  padding: 100px 50px;
-  position: relative;
-  box-shadow: $container-shadow;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 0px;
-    left:calc(33% + 15px); //$gutter/2
-    bottom: 0px;
-    width: $border-width;
-    background: #ddd;
-  }
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  } 
-}
-
-.entry {
-  clear: both;
-  text-align: left;
-  position: relative;
-  .title {
-    margin-bottom: .5em;
-    float: left;
-    width: 33%;
-    padding-right: $gutter;
-    text-align: right;
-    position: relative;
-    &:before {
-      content: '';
-      position: absolute;
-      width: $dot-diameter;
-      height: $dot-diameter;
-      border: $border-width solid salmon;
-      background-color:#fff;
-      border-radius:100%;
-      top: 15%;
-      right: -$dot-diameter;
-      z-index: 99;
-    }
-    h3 {
-      margin: 0;
-      font-size: 120%;
-    }
-    p {
-      margin: 0;
-      font-size: 100%;
-    }
-  }
-  .body {
-    margin: 0 0 3em;
-    float: right;
-    width: 66%;
-    padding-left: $gutter;
-    p {
-      line-height: 1.4em;
-      &:first-child {
-        margin-top: 0;
-        font-weight: 400;
-      }
-    }
