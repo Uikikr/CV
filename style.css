@@ -1,4 +1,4 @@
-body {
+body,html {
   height: 100%;
   width: auto;
   margin: 0;
@@ -53,6 +53,7 @@ li {
   font-size: 16px;
   border: none;
   cursor: pointer;
+  z-index: 10;
  }
 
 .dropBttn:hover {
@@ -70,7 +71,7 @@ li {
   background-color: #ffffff;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 10;
 }
 
 .dropdown-content a {
@@ -107,10 +108,10 @@ li {
   top: 50%;
   width: 100%;
   text-align: center;
-  color: #000;
   }
+
 .img_text span.border {
-  background-color: #ca606a;
+  background-color: rgba(11,24,32, 0.85);
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -136,7 +137,7 @@ li {
   content: '';
   position: absolute;
   width: 6px;
-  background-color: #609fca;
+  background-color: #c7ddec;
   top: 0;
   bottom: 0;
   left: 25%;
@@ -186,30 +187,14 @@ li {
 
 .content {
   padding: 20px 30px;
-  background-color: #99c2dd;
+  background-color: #c7ddec;
   position: relative;
   border-radius: 6px;
 }
 
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .timeline::after {
-  left: 31px;
-  }
-  
-  .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
-  }
-  
-  .right {
-  left: 0%;
-  }
-}
 /*education and internship*/
 #edu_intern {
-  background-color: #d7d086;
+  background-color: #c7ddec;
   -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
   box-shadow: 2px 2px 2px 2px #cccdce;
   height: 300px;
@@ -258,31 +243,31 @@ li {
 
 .swe {
   width: 100%;
-  background-color: #609fca;
+  background-color: #c7ddec;
 }
 .eng {
   width: 90%;
-  background-color: #9fca60;
+  background-color: #c7ddec;
 }
 .pol {
   width: 20%;
-  background-color: #ca609f;
+  background-color: #c7ddec;
 }
 .html {
   width: 90%;
-  background-color: #609fca;
+  background-color: #c7ddec;
 }
 .CSS {
   width: 90%;
-  background-color: #9fca60;
+  background-color: #c7ddec;
 }
 .JavaS {
   width: 45%;
-  background-color: #ca609f;
+  background-color: #c7ddec;
 }
 .ruby {
   width: 20%;
-  background-color: #cac060;
+  background-color: #c7ddec;
 }
 
 #software {
@@ -290,7 +275,7 @@ li {
   text-align: center;
   justify-content: center;
   height: 400px;
-  background-color: #d7868e;
+  background-color: #c7ddec;
   -webkit-box-shadow: 2px 2px 2px 2px #919699;
   box-shadow: 2px 2px 2px 2px #919699;
 }
@@ -482,4 +467,43 @@ li {
 .foot_container p {
   padding-left: 15px;
   line-height: 150%;
+}
+
+.bg { 
+  /* The image used */
+  background-image: url("background.jpg");
+
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media screen and (max-width: 800px) {
+  body {
+    width: 800px ;
+    max-width: 100% ;
+  }
+
+ .bg_img {
+   width: 100%;
+   background-size: cover;
+  
+   } 
+
+  .xp_list::after {
+  left: 31px;
+  }
+  
+  .container {
+  width: 100%;
+  padding-left: 70px;
+  padding-right: 25px;
+  }
+  
+  .right {
+  left: 0%;
+  }
 }
