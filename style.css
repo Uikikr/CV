@@ -1,8 +1,12 @@
-body,html {
+body,
+html {
   height: 100%;
   width: auto;
   margin: 0;
 }
+
+/*Fonts*/
+
 h2 {
   font-family: "Muli";
   font-size: 43px;
@@ -19,42 +23,23 @@ a {
   font-size: 18px;
 }
 
-#about {
-  background-color: #7142f4;
-  color: #fff;
-  border-radius: 4px;
-  padding: 0px 12px;
-  border: 1px #7142f4;
-  height: 30px;
-  width: 95px;
-}
-
-li {
-  list-style-type: none;
-  font-family: "Roboto";
-  font-size: 20px;
-}
-
 /*Meny*/
 
 #navbar {
   position: fixed;
-  justify-content: space-between;
-  align-items: center;
   top: 0;
   width: 100%;
-  display: flex;
   transition: top 0.3s;
 }
 
+/*The actual button*/
 .dropBttn {
-  /*background-color: white;*/
   padding: 16px;
   font-size: 16px;
   border: none;
   cursor: pointer;
   z-index: 10;
- }
+}
 
 .dropBttn:hover {
   background-color: #609fca;
@@ -63,6 +48,7 @@ li {
 .dropdown {
   position: relative;
   display: inline-block;
+  z-index: 10;
 }
 
 .dropdown-content {
@@ -79,28 +65,31 @@ li {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  z-index: 10;
 }
 
 .dropdown-content a:hover {
   background-color: #ddd;
+  z-index: 10;
 }
 
 .show {
   display: block;
+  z-index: 10;
 }
 
-/*Starter*/
+/*Hold image*/
 
-.bg_img {
+.bg {
   background-image: url("background.jpg");
-  height: 910px;
+  height: 100%;
   opacity: 0.65;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
   z-index: -1;
-  }
+}
 
 .img_text {
   position: absolute;
@@ -108,10 +97,10 @@ li {
   top: 50%;
   width: 100%;
   text-align: center;
-  }
+}
 
 .img_text span.border {
-  background-color: rgba(11,24,32, 0.85);
+  background-color: rgba(11, 24, 32, 0.85);
   color: #fff;
   padding: 18px;
   font-size: 25px;
@@ -122,7 +111,7 @@ li {
 
 .xp_list h2 {
   font-family: "Muli";
-  font-size: 23px;
+  font-size: 20px;
   text-align: left;
 }
 
@@ -134,7 +123,7 @@ li {
 }
 
 .xp_list::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 6px;
   background-color: #c7ddec;
@@ -152,7 +141,7 @@ li {
 }
 
 .container::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 25px;
   height: 25px;
@@ -194,10 +183,11 @@ li {
 
 /*education and internship*/
 #edu_intern {
+  padding-bottom: 50px;
   background-color: #c7ddec;
   -webkit-box-shadow: 2px 2px 2px 2px #cccdce;
   box-shadow: 2px 2px 2px 2px #cccdce;
-  height: 300px;
+  height: auto;
   justify-content: center;
   width: 100%;
 }
@@ -212,11 +202,12 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /*.edu {
-  padding-left: 20px;
-}*/
+    padding-left: 20px;
+  }*/
 
 #lang_prog {
   display: flex;
@@ -272,9 +263,10 @@ li {
 
 #software {
   padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   justify-content: center;
-  height: 400px;
+  height: auto;
   background-color: #c7ddec;
   -webkit-box-shadow: 2px 2px 2px 2px #919699;
   box-shadow: 2px 2px 2px 2px #919699;
@@ -284,6 +276,7 @@ li {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 /** slideshow*/
@@ -419,7 +412,7 @@ li {
   width: 500px;
   cursor: pointer;
   font-weight: bold;
-  }
+}
 
 .modal {
   display: none;
@@ -456,7 +449,6 @@ li {
   cursor: pointer;
 }
 
-
 .foot_container {
   display: flex;
   flex-direction: row;
@@ -469,41 +461,23 @@ li {
   line-height: 150%;
 }
 
-.bg { 
-  /* The image used */
-  background-image: url("background.jpg");
-
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 @media screen and (max-width: 800px) {
   body {
-    width: 800px ;
-    max-width: 100% ;
+    width: 800px;
+    max-width: 100%;
   }
-
- .bg_img {
-   width: 100%;
-   background-size: cover;
-  
-   } 
 
   .xp_list::after {
-  left: 31px;
+    left: 31px;
   }
-  
+
   .container {
-  width: 100%;
-  padding-left: 70px;
-  padding-right: 25px;
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
   }
-  
+
   .right {
-  left: 0%;
+    left: 0%;
   }
 }
